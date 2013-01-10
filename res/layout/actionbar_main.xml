@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header_bg">
+    
+    <ImageView
+        android:id="@+id/actionbar_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/header_logo" />
+    
+    <RelativeLayout
+        android:id="@+id/actionbar_group_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true" >
+
+        <ImageView
+            android:id="@+id/actionbar_group_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/header_group_off" />
+
+        <TextView
+            android:id="@+id/actionbar_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="-"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/actionbar_channel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/actionbar_group_layout"
+        android:clickable="true"
+        android:src="@drawable/header_channel_off" />
+    
+</RelativeLayout>

@@ -1,0 +1,11 @@
+*~
+R.java
+.DS_Store
+.settings
+.metadata
+.project
+.classpath
+local.properties
+bin
+gen
+target

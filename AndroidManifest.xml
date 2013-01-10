@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.hoccer.android" android:versionCode="1" android:versionName="0.0.1-SNAPSHOT">
+
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="16"/>
+    
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+  <application
+      android:name=".HoccerApplication"
+      android:icon="@drawable/icon"
+      android:label="@string/application_name"
+      android:theme="@android:style/Theme.NoTitleBar">
+    
+    <activity
+        android:name=".HoccerActivity"
+        android:launchMode="singleTop">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    
+    <service android:name=".service.HoccerService">
+    </service>
+  </application>
+
+</manifest>
+
